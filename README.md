@@ -6,20 +6,20 @@ This repository contains code and analysis for the House Price Dataset, which in
 # Analysis and Steps Performed
 
 # Q1. Perform Basic EDA
-    The following steps were performed for EDA:
-    1. Loading the dataset.
-    2. Checking the shape and structure of the data (columns, data types, missing values).
-    3. Displaying basic summary statistics for numerical columns.
+      The following steps were performed for EDA:
+      1. Loading the dataset.
+      2. Checking the shape and structure of the data (columns, data types, missing values).
+      3. Displaying basic summary statistics for numerical columns.
 
 # Q2. Detect Outliers Using Various Methods
-  We detected outliers in the price_per_sqft column using the following methods:
-  1. Mean and Standard Deviation Method: Identifying values that fall outside the range defined by mean ± standard deviation.
-  2. Percentile Method: Detecting outliers using fixed percentiles (e.g., 1st and 99th percentiles).
-  3. IQR (Inter Quartile Range): Using IQR to define upper and lower bounds for normal data points.
-  4. Z-Score Method: Identifying data points where the Z-score exceeds a given threshold (usually 3).
+      We detected outliers in the price_per_sqft column using the following methods:
+      1. Mean and Standard Deviation Method: Identifying values that fall outside the range defined by mean ± standard deviation.
+      2. Percentile Method: Detecting outliers using fixed percentiles (e.g., 1st and 99th percentiles).
+      3. IQR (Inter Quartile Range): Using IQR to define upper and lower bounds for normal data points.
+      4. Z-Score Method: Identifying data points where the Z-score exceeds a given threshold (usually 3).
 
 # Q3. Create Box Plot to Compare Outlier Removal Methods
-  We created box plots to visually compare the effect of the outlier removal methods, which allowed us to determine which method works best for the price_per_sqft column.
+      We created box plots to visually compare the effect of the outlier removal methods, which allowed us to determine which method works best for the price_per_sqft column.
 
 # Q4. Check Normality of price_per_sqft
       We checked the distribution of price_per_sqft by plotting a histogram. The following transformations were considered if the data was skewed:
